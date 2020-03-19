@@ -1,11 +1,14 @@
 def square_array(array)
   # your code here
-  count = 0
+  counter = 0
   new_array = []
   
-  while count < array.length do
-    new_array += ([array[count] *= array[count]])
-    count += 1
+  while counter < array.length do
+    # new_array += ([array[counter] *= array[counter]])
+    # new_array << array[counter] ** 2
+    new_array.push(array[counter] ** 2)
+    
+    counter += 1
   end
   
   return new_array
